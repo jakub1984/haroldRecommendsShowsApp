@@ -44,57 +44,47 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="178" translatesAutoresizingMaskIntoConstraints="NO" id="1Gw-nD-zIB">
-                                <rect key="frame" x="20" y="150.5" width="280" height="402"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-Sg-Xue">
+                                <rect key="frame" x="64" y="264" width="192" height="40"/>
+                                <state key="normal" image="binge-btn"/>
+                                <connections>
+                                    <action selector="whatBingeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNZ-hi-8kP"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="XRt-qh-J6i">
+                                <rect key="frame" x="20" y="469" width="280" height="79"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Cj0-zQ-NEN">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="145"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-PH-x9t">
-                                                <rect key="frame" x="41.5" y="0.0" width="197" height="65"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harold says, watch: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBg-1z-pWe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="197" height="25.5"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game of thrones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="azv-WB-R1M">
-                                                        <rect key="frame" x="14" y="37.5" width="169.5" height="27.5"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
-                                                        <color key="textColor" red="1" green="0.58686931220000005" blue="0.50148204939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-Sg-Xue">
-                                                <rect key="frame" x="44" y="105" width="192" height="40"/>
-                                                <state key="normal" image="binge-btn"/>
-                                                <connections>
-                                                    <action selector="whatBingeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNZ-hi-8kP"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="XRt-qh-J6i">
-                                        <rect key="frame" x="0.0" y="323" width="280" height="79"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter another show" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJz-o9-Ndh">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-cl-ngs">
-                                                <rect key="frame" x="0.0" y="39" width="280" height="40"/>
-                                                <state key="normal" image="add-show-btn"/>
-                                                <connections>
-                                                    <action selector="addShowButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3RR-TX-ere"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter another show" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJz-o9-Ndh">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWd-cl-ngs">
+                                        <rect key="frame" x="0.0" y="39" width="280" height="40"/>
+                                        <state key="normal" image="add-show-btn"/>
+                                        <connections>
+                                            <action selector="addShowButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3RR-TX-ere"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-PH-x9t">
+                                <rect key="frame" x="61.5" y="179" width="197" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harold says, watch: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBg-1z-pWe">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game of thrones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="azv-WB-R1M">
+                                        <rect key="frame" x="14" y="37.5" width="169.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                        <color key="textColor" red="1" green="0.58686931220000005" blue="0.50148204939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -102,16 +92,20 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="51b-m8-2ao" secondAttribute="bottom" id="3ER-4W-H22"/>
                             <constraint firstItem="51b-m8-2ao" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3ej-vH-LfG"/>
+                            <constraint firstItem="Ynx-Sg-Xue" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="418-rH-2y4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="arb-dR-7SU" secondAttribute="trailing" constant="20" id="9yc-0u-Tmz"/>
                             <constraint firstItem="arb-dR-7SU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DLv-Yg-4Te"/>
-                            <constraint firstItem="1Gw-nD-zIB" firstAttribute="top" secondItem="arb-dR-7SU" secondAttribute="bottom" constant="20" id="F2O-YZ-1lM"/>
-                            <constraint firstItem="1Gw-nD-zIB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fd6-ZC-h3O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XRt-qh-J6i" secondAttribute="trailing" constant="20" id="Glc-Ce-9zq"/>
                             <constraint firstItem="51b-m8-2ao" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Rbv-UU-GE3"/>
                             <constraint firstItem="CzW-LU-Dl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Sca-bw-Caf"/>
+                            <constraint firstItem="Ynx-Sg-Xue" firstAttribute="top" secondItem="wtk-PH-x9t" secondAttribute="bottom" constant="20" id="dXb-NW-Y8b"/>
+                            <constraint firstItem="Ynx-Sg-Xue" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e05-mW-f5p"/>
                             <constraint firstItem="arb-dR-7SU" firstAttribute="top" secondItem="CzW-LU-Dl8" secondAttribute="bottom" constant="20" id="lCP-fu-hqR"/>
+                            <constraint firstItem="XRt-qh-J6i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qga-V4-8lK"/>
                             <constraint firstItem="CzW-LU-Dl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rLi-IZ-OO5"/>
                             <constraint firstItem="51b-m8-2ao" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="soe-St-s2S"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Gw-nD-zIB" secondAttribute="trailing" constant="20" id="z8d-5E-p6E"/>
+                            <constraint firstItem="wtk-PH-x9t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yWw-MA-t3q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XRt-qh-J6i" secondAttribute="bottom" constant="20" id="zhy-1W-mCD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
